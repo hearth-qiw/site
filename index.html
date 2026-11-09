@@ -1,68 +1,224 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hearth: a warm, quiet place for faith in everyday life</title>
-<meta name="description" content="Hearth is a faith community app for sharing Scripture and lift requests, encouraging one another, and keeping a private Safe for your own notes. Now in private beta.">
-<meta name="referrer" content="strict-origin-when-cross-origin">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; base-uri 'none'; form-action 'none'">
-<meta name="theme-color" content="#f4ead9" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#100c08" media="(prefers-color-scheme: dark)">
-<link rel="canonical" href="https://hearthqiw.online/">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="stylesheet" href="/style.css">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Hearth">
-<meta property="og:title" content="Hearth: a warm, quiet place for faith in everyday life">
-<meta property="og:description" content="Hearth is a faith community app for sharing Scripture and lift requests, encouraging one another, and keeping a private Safe for your own notes. Now in private beta.">
-<meta property="og:url" content="https://hearthqiw.online/">
-<meta property="og:image" content="https://hearthqiw.online/og-image.png">
-<meta name="twitter:card" content="summary">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QIW — Websites, Apps &amp; Business Infrastructure</title>
+  <meta name="description" content="QIW — Quantum Intelligence Works — builds custom websites, web apps, and business infrastructure for businesses ready to operate at a higher level." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0A0A0A" />
+  <link rel="canonical" href="https://hearthqiw.online/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="QIW — Websites, Apps &amp; Business Infrastructure" />
+  <meta property="og:description" content="QIW — Quantum Intelligence Works — builds custom websites, web apps, and business infrastructure for businesses ready to operate at a higher level." />
+  <meta property="og:image" content="https://hearthqiw.online/assets/brand/og-image-1200x630.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hearthqiw.online/" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="QIW — Websites, Apps &amp; Business Infrastructure" />
+  <meta name="twitter:description" content="Custom websites, web apps, and business infrastructure for businesses ready to operate at a higher level." />
+  <meta name="twitter:image" content="https://hearthqiw.online/assets/brand/og-image-1200x630.png" />
+
+  <!-- Favicon: red Q mark (crisp at tab size); crest is the on-page logo -->
+  <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png" />
+
+  <!-- Fonts: Cinzel (display) + Inter (body) — Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/tokens.css" />
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+
+  <!-- JSON-LD Organization (no founder names) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "QIW",
+    "alternateName": "Quantum Intelligence Works",
+    "legalName": "Quantum Intelligence Works LLC",
+    "url": "https://hearthqiw.online",
+    "slogan": "Engineering the Future of Intelligence",
+    "email": "quantumintelligenceworks@gmail.com",
+    "telephone": "+1-219-608-4623",
+    "contactPoint": [
+      { "@type": "ContactPoint", "telephone": "+1-219-323-5295", "contactType": "sales" },
+      { "@type": "ContactPoint", "telephone": "+1-219-608-4623", "contactType": "customer service" }
+    ],
+    "areaServed": "US",
+    "knowsAbout": ["Custom website development", "Custom web app development", "Business infrastructure consulting"]
+  }
+  </script>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<header class="site">
-  <div class="wrap">
-    <a class="brand" href="/"><picture><source srcset="/mark-ember.svg" media="(prefers-color-scheme: dark)"><img src="/mark-light.svg" alt="" width="36" height="36"></picture><span>Hearth</span></a>
-    <nav aria-label="Main">
-      <a href="/privacy/">Privacy</a>
-      <a href="/terms/">Terms</a>
-      <a href="/support/">Support</a>
-    </nav>
-  </div>
-</header>
-<main id="main">
-  <div class="wrap">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="index.html" aria-label="QIW home">
+        <img src="assets/brand/qiw-emblem-reversed.svg" class="brand__mark" width="38" height="44" alt="" /><span class="brand__name">QIW</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html#products">Products</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav__cta">
+        <a class="btn btn--primary" href="contact.html">Book a Call</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
     <section class="hero">
-      <h1>A warm, quiet place for faith in everyday life.</h1>
-      <p class="lead">Share Scripture, ask for a Lift, and encourage one another. Keep your own notes in a private Safe that never leaves your phone.</p>
-      <p><a class="button" href="mailto:hello@hearthqiw.online?subject=Hearth%20beta">Ask about the beta</a></p>
+      <div class="container hero__inner">
+        <p class="tag">Engineering the Future of Intelligence</p>
+        <h1>Your business runs on systems.<br>We build them right.</h1>
+        <p class="hero__sub">QIW builds the websites, web apps, and business infrastructure that turn your operations into a competitive advantage.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary btn--lg" href="contact.html">Book a Discovery Call</a>
+          <a class="btn btn--ghost btn--lg" href="services.html">See What We Build</a>
+        </div>
+        <p class="hero__meta"><span class="hero__dot" aria-hidden="true"></span> Now accepting clients nationwide.</p>
+      </div>
     </section>
 
-    <ul class="cards">
-      <li><strong>Share and Lift</strong>Post Scripture, a request, or a testimony. Lift someone else&rsquo;s. Counts stay private to the person who posted.</li>
-      <li><strong>Read</strong>The Bible in your pocket, with search that finds the verse you half remember.</li>
-      <li><strong>The Safe</strong>Private notes behind your own passkey, stored on your phone only. No one reads them, and no AI does either.</li>
-    </ul>
+    <!-- PRODUCTS -->
+    <section id="products" class="products">
+      <div class="container">
+        <div class="section-head">
+          <p class="tag">Our Products</p>
+          <h2>We build our own products, too.</h2>
+        </div>
 
-    <h2>Private beta</h2>
-    <p>Hearth is not in the App Store yet. We are testing it with a small group first, and building it carefully: moderation, privacy and a gentle pace come before growth.</p>
-    <p>Want to hear when it opens? Email <a href="mailto:hello@hearthqiw.online">hello@hearthqiw.online</a>.</p>
-    <p class="muted small">Hearth is not a crisis service. If you or someone else may be in danger, call your local emergency number or, in the US, call or text 988.</p>
-  </div>
-</main>
-<footer class="site">
-  <div class="wrap">
-    <span>&copy; 2026 Hearth · made by Quantum Intelligence Works LLC</span>
-    <nav aria-label="Footer">
-      <a href="/privacy/">Privacy Policy</a>
-      <a href="/terms/">Terms of Service</a>
-      <a href="/support/">Support</a>
-      <a href="mailto:hello@hearthqiw.online">hello@hearthqiw.online</a>
-    </nav>
-  </div>
-</footer>
+        <div class="products-grid">
+          <article class="card product-card">
+            <img class="product-card__mark" src="hearth/mark-ember.svg" width="48" height="48" alt="" />
+            <h3>Hearth</h3>
+            <p class="card__sub">Faith community app</p>
+            <p>A warm, quiet place for faith in everyday life. Share Scripture, ask for a Lift, and encourage one another, with a private Safe for your own notes.</p>
+            <p class="card__meta">Private beta · Coming to the App Store</p>
+            <a class="btn btn--ghost" href="hearth/">Meet Hearth</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM STATEMENT -->
+    <section class="problem">
+      <div class="container">
+        <p class="tag">The Problem</p>
+        <h2>Your customers judge your business by your website. It should work as hard as you do.</h2>
+        <p>Your website is a brochure. Your systems don't talk to each other. And the off-the-shelf software you've tried was built for someone else's problem. We fix all three — as a single connected system, not three separate projects.</p>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <p class="tag">What We Build</p>
+          <h2>One engagement. Three layers.</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="card">
+            <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M3 9h18M8 21h8M12 17v4"/></svg>
+            <h3>Website Build</h3>
+            <p class="card__sub">Custom Websites</p>
+            <p>A real website, shipped fast and built to convert — delivered as code you own and host anywhere. The opposite of a slow, generic template build.</p>
+            <p class="card__meta">Websites · Landing pages · Inbound forms</p>
+          </article>
+
+          <article class="card">
+            <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 9v12"/></svg>
+            <h3>App Build</h3>
+            <p class="card__sub">Web Apps &amp; Internal Tools</p>
+            <p>A custom web app that runs a real workflow — client portals, booking and intake, quoting and reporting — built around your business and delivered as code you own.</p>
+            <p class="card__meta">Client portals · Booking &amp; intake · Dashboards</p>
+          </article>
+
+          <article class="card">
+            <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/><circle cx="19" cy="18" r="2"/></svg>
+            <h3>Business Infrastructure</h3>
+            <p class="card__sub">Infrastructure &amp; Integrations</p>
+            <p>A scoped audit of your stack with a written roadmap: what to keep, retire, integrate, and secure — plus the integration map deliverable you keep and own.</p>
+            <p class="card__meta">Stack audit · Integration map · Security baseline</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <p class="tag">The Process</p>
+          <h2>Three steps. One system. No handoffs.</h2>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <p class="step__num">01 — Audit</p>
+            <h3>We map the gaps.</h3>
+            <p>We map your current digital footprint, identify gaps, and define the system that fits your operation.</p>
+          </div>
+          <div class="step">
+            <p class="step__num">02 — Build</p>
+            <h3>We build it connected.</h3>
+            <p>Website, apps, and infrastructure built simultaneously. Everything connected from day one.</p>
+          </div>
+          <div class="step">
+            <p class="step__num">03 — Deploy</p>
+            <h3>We hand you the keys.</h3>
+            <p>You get a live system, an integration map, and code you own. We hand you the keys.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band">
+      <div class="container">
+        <h2>Ready to stop patching and start building?</h2>
+        <p>A 30-minute discovery call is all it takes to map what's possible.</p>
+        <div class="cta-band__btns">
+          <a class="btn btn--primary btn--lg" href="contact.html">Book a Discovery Call</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="QIW home">
+          <img src="assets/brand/qiw-emblem-reversed.svg" class="brand__mark" width="38" height="44" alt="" /><span class="brand__name">QIW</span>
+        </a>
+        <p class="footer__tagline">Built by students inspired by the same background — engineering, finance, and the conviction that the next operating layer of business is intelligent.</p>
+        <nav class="footer__links" aria-label="Footer">
+          <a href="hearth/">Hearth</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer__meta">
+        <b>QIW — Quantum Intelligence Works.</b><br>
+        Engineering the Future of Intelligence.<br>
+        <a href="mailto:quantumintelligenceworks@gmail.com">quantumintelligenceworks@gmail.com</a><br>
+        Sales <a href="tel:+12193235295">(219) 323-5295</a><br>
+        Business <a href="tel:+12196084623">(219) 608-4623</a><br>
+        © 2026 Quantum Intelligence Works LLC. All rights reserved.
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
