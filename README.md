@@ -1,14 +1,22 @@
 # hearthqiw.online
 
-The public website for **Hearth**: a home page plus the Privacy Policy, Terms of Service and Support pages the App Store listing needs. Served by GitHub Pages at <https://hearthqiw.online>.
+The public website of **QIW (Quantum Intelligence Works LLC)**, with **Hearth** as its first product. Served by GitHub Pages at <https://hearthqiw.online>.
 
-The Hearth app itself lives in a separate, private repository (`hearth-qiw/hearth-app`). This repository holds only the public pages.
+| Address | What |
+|---|---|
+| `/`, `/services.html`, `/contact.html` | The QIW company site (products and services) |
+| `/hearth/` | Hearth's product page |
+| `/privacy/`, `/terms/`, `/support/` | Hearth's Privacy Policy, Terms of Service and Support. **Keep these addresses**: the App Store listing and the app link to them |
+
+**Source of truth (since 2026-11-08):** `QuantumAI/site` (repository `quantumintelligenceworks/QIW---Site`). Change the site there, then copy it here with `node tools/sync-to-hearthqiw.mjs <path to this clone>` from that folder, review the diff, and commit to `main` (that publishes it). Don't edit pages here directly.
+
+The Hearth app itself lives in a separate, private repository (`hearth-qiw/hearth-app`); its web version is app.hearthqiw.online (`hearth-qiw/hearth-web`).
 
 ## What is here
-- Plain HTML and CSS. **No build step, no scripts, no cookies, no third-party requests** (system fonts, own stylesheet).
+- Plain HTML and CSS. No build step and no cookies. The Hearth pages (`/hearth/`, `/privacy/`, `/terms/`, `/support/`) make no third-party requests (system fonts, own stylesheet in `/hearth/`); the QIW pages load Cinzel and Inter from Google Fonts.
 - Links use trailing slashes (`/privacy/`) because GitHub Pages serves `privacy/index.html` that way.
 - `CNAME` tells GitHub Pages the custom domain; `.nojekyll` turns off Jekyll processing. Keep both.
-- Colors and the H mark come from the app (`src/lib/theme.ts`, `assets/brand/` in the app repo). Light and dark follow the visitor's setting; text passes WCAG AA.
+- Hearth's colors and H mark (in `/hearth/`) come from the app (`src/lib/theme.ts`, `assets/brand/` in the app repo). Light and dark follow the visitor's setting; text passes WCAG AA.
 - GitHub Pages cannot send custom HTTP headers, so the content-security policy is a `<meta>` tag in each page's head.
 
 ## Draft legal text
